@@ -1,7 +1,7 @@
 # String Calculator Kata - Ruby version
 This Code Kata is based on Roy Osherove's String Calculator. See http://osherove.com/tdd-kata-1
 
-At my previous employer, in 2015-2016,  we used to practice Code Katas with a twist:
+At my previous employer, in 2014-2015,  we used to practice Code Katas with a twist:
 
 **Live coding in front of an audience of fellow programmers!**
 
