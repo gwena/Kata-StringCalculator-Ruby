@@ -12,14 +12,11 @@ As much as one would have practiced the Kata on her/his own before, to be in the
 ## 4 Lines Version
 
 ```ruby
+def add(str)
   dlm = str[%r{//(\[.*?\])\n}] ? $1.scan(/\[(.*?)\]/).flatten.map { |d| Regexp.quote(d) }.join('|') : ','
   ns = str.split(/#{dlm}|\n/).map(&:to_i)
   raise ArgumentError, "Negatives Not Allowed: #{ns.select { |n| n < 0 }.join(',') }" if ns.find { |n| n < 0 }
   ns.reject { |n| n > 1000 }.reduce(0, :+)
+end
 ```
-
-
-
-
-
 
