@@ -22,3 +22,8 @@ def add(str)
 end
 ```
 
+## One Liner Version
+
+## Tests
+
+
