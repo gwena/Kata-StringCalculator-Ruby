@@ -23,6 +23,11 @@ end
 ```
 
 ## One Liner Version
+```ruby
+def add(s)
+  s.split(/#{s[%r{//(\[.*?\])\n}]?$1.scan(/\[(.*?)\]/).flatten.map{|d|Regexp.quote(d)}.join('|'):','}|\n/).map(&:to_i).select{|n|n<0?(fail ArgumentError,"Negs errors:#{s.scan(/-\d+/).join(',')}"):n}.reject{|n|n>1000}.reduce(0,:+)
+end
+```
 
 ## Tests
 
