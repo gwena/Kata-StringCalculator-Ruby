@@ -29,6 +29,7 @@ def add(s)
 end
 ```
 
+Note that there is no semi-colon, and so not a group of statements joined on one line - that would have been cheating!
 ## Tests
 
 
