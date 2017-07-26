@@ -10,7 +10,7 @@ Sessions were fun (the Thursdays during the Brown Bag time-slot), and it was a g
 Even if we would have practiced the Kata on our own before, to be in the *hot seat* was always pushing people out of their comfort zone.
 
 ## Live Coding Version - 4 Lines
-Version done during the live coding Brown Bag session, using TDD: write the test, fail, write the code, refactor.
+The version I coded during the live coding Brown Bag session, using TDD: write the test, fail, write the code, refactor.
 
 This is not readable, and not the way I leave code behind, I just wanted something terse to contrast with other languages.
 ```ruby
