@@ -33,6 +33,7 @@ Note that there is no semi-colon, and so a true one liner (not a group of statem
 ## Tests
 
 ```ruby
+# Tests - RSpec
 describe "StringCalculator.add" do
   it 'should return 0 for empty string' do
     expect(add("")).to eql(0)
@@ -66,11 +67,11 @@ describe "StringCalculator.add" do
     expect(add("1001,2\n3000")).to eql(2)
   end
 
-  it 'should cater for delimiter of multiple length' do
+  it 'should handle for delimiter of multiple length' do
     expect(add("//[;;;]\n1;;;2\n3")).to eql(6)
   end
 
-  it 'should cater for multiple delimiters' do
+  it 'should handle for multiple delimiters of multiple lengths' do
     expect(add("//[;;;][$$$]\n1;;;2$$$3")).to eql(6)
   end
 end
