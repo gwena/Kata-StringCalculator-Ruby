@@ -29,7 +29,7 @@ def add(s)
 end
 ```
 
-Note that there is no semi-colon, and so a true one liner but not a group of statements joined on one line - that would have been cheating!
+Note that there is no semi-colon, and so a true one liner (not a group of statements joined on one line - that would have been cheating!)
 ## Tests
 
 
