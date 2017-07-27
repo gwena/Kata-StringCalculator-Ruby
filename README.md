@@ -67,11 +67,11 @@ describe "StringCalculator.add" do
     expect(add("1001,2\n3000")).to eql(2)
   end
 
-  it 'should handle for delimiter of multiple length' do
+  it 'should handle delimiter of multiple length' do
     expect(add("//[;;;]\n1;;;2\n3")).to eql(6)
   end
 
-  it 'should handle for multiple delimiters of multiple lengths' do
+  it 'should handle multiple delimiters of multiple lengths' do
     expect(add("//[;;;][$$$]\n1;;;2$$$3")).to eql(6)
   end
 end
